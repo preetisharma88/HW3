@@ -1,0 +1,27 @@
+git init
+git add Test3.txt
+git commit -m "Test commit"
+git remote add origin https://github.com/preetisharma88/HW3.git
+git branch -M main
+git push -u origin main
+git branch
+git checkout -b test
+git add Test3.txt
+git commit -m "added 1st line in file"
+git push origin test
+git clone https://github.com/preetisharma88/HW3.git
+git checkout develop
+git checkout -b clonedbranch
+git add Test3.txt
+git commit -m "new line added"
+git push origin
+git push origin clonedbranch
+git checkout develop
+git fetch --all
+git merge test
+git merge origin/test
+git merge origin/clonedbranch
+git add .
+git status
+git commit -m "conflic resolved"
+git push origin develop
